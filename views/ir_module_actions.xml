@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Aksi sekali-klik: perbaiki icon modul yang dipilih di Apps -->
+    <record id="action_ir_module_regenerate_icon" model="ir.actions.server">
+        <field name="name">Regenerate Icon</field>
+        <field name="model_id" ref="base.model_ir_module_module"/>
+        <field name="binding_model_id" ref="base.model_ir_module_module"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">records.action_regenerate_icon()</field>
+    </record>
+
+    <!-- Aksi sekali-klik: perbaiki SEMUA icon modul yang kosong/rusak -->
+    <record id="action_ir_module_fix_all_icons" model="ir.actions.server">
+        <field name="name">Fix All Module Icons</field>
+        <field name="model_id" ref="base.model_ir_module_module"/>
+        <field name="binding_model_id" ref="base.model_ir_module_module"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">model.action_fix_all_icons()</field>
+    </record>
+</odoo>

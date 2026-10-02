@@ -1,0 +1,52 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Fix Module Icons</h2>
+            <h3 class="oe_slogan">Stop app icons from disappearing after every install / upgrade</h3>
+            <p class="oe_mt32 text-center" style="max-width: 640px; margin: 0 auto;">
+                In Odoo 14, installing or upgrading <b>one</b> module can break the icons
+                of <b>other</b> modules on the Apps page — rotating through your list
+                with each installation. This module fixes the root cause permanently.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Why do icons break?</h3>
+            <p style="max-width: 640px; margin: 0 auto;">
+                The Apps page renders each card from the stored
+                <i>ir.module.module.icon</i> field. On every install/upgrade, Odoo
+                rewrites that field from the <i>icon</i> key of the module manifest.
+                Modules without an <i>icon</i> key get their stored icon reset to
+                empty — hence the broken images.
+            </p>
+        </div>
+        <div class="oe_span12 oe_mt32">
+            <h3 class="oe_slogan">What this module does</h3>
+        </div>
+        <div class="oe_span6">
+            <ul>
+                <li><b>Stops the reset</b> — if a manifest has no <i>icon</i> key, the already-stored icon value is left untouched.</li>
+                <li><b>Smart fallback</b> — modules with an empty icon get Odoo's standard fallback icon.</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <ul>
+                <li><b>One-click repair</b> — installing the module automatically repairs all broken icons.</li>
+                <li><b>Manual repair</b> — Apps → select module(s) → Action → <b>Regenerate Icon</b>.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Support</h3>
+            <p class="text-center">Ahmad Ghozali</p>
+        </div>
+    </div>
+</section>
