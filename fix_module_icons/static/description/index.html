@@ -45,8 +45,38 @@
 <section class="oe_container">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <h3 class="oe_slogan">Support</h3>
-            <p class="text-center">Ahmad Ghozali</p>
+            <h3 class="oe_slogan">How to Configure Upload Path</h3>
+            <div style="max-width: 640px; margin: 0 auto;">
+                <ol style="font-size: 16px; line-height: 1.5;">
+                    <li>Activate <b>Developer mode</b></li>
+                    <li>Go to <b>Settings &rarr; Technical &rarr; Parameters &rarr; System Parameters &rarr; Create</b></li>
+                    <li>Fill in the fields:
+                        <ul>
+                            <li><b>Key:</b> <code>module_uploader.upload_path</code></li>
+                            <li><b>Value:</b>
+                                <ul>
+                                    <li>non docker : <code>/opt/Erpfii/odoo/addons</code></li>
+                                    <li>docker : <code>/mnt/custom-addons</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Click <b>Save</b></li>
+                </ol>
+                <div class="text-center oe_mt32">
+                    <img src="how to.png" alt="Configuration" style="max-width: 100%;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12 text-center">
+            <h3 class="oe_slogan" style="margin-bottom: 20px;">Support</h3>
+            <img src="Logo AG.png" alt="Ahmad Ghozali Logo" style="max-height: 120px; margin-bottom: 15px;" />
+            <h4 style="font-weight: bold;">Ahmad Ghozali</h4>
         </div>
     </div>
 </section>

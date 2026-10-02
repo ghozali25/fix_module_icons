@@ -18,6 +18,19 @@ empty — broken images rotating through your Apps list.
 3. Installing this module automatically repairs all broken icons
 4. Manual repair: Apps → select module(s) → Action → **Regenerate Icon**
 
+## Configuration
+
+1. Aktifkan developer mode
+2. Settings → Technical → Parameters → System Parameters → Create
+3. Isi:
+   * **Key:** `module_uploader.upload_path`
+   * **Value:** 
+     * non docker : `/opt/Erpfii/odoo/addons`
+     * docker : `/mnt/custom-addons`
+4. Save
+
+*(See `static/description/how to.png` for visual reference)*
+
 ## License
 
 LGPL-3
