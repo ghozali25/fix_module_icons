@@ -48,7 +48,7 @@ diperbaiki. Tersedia juga aksi sekali-klik "Regenerate Icon" dan
     'author': 'Ahmad Ghozali',
     'license': 'LGPL-3',
     'depends': ['base'],
-    'images': ['static/description/thumbnail.png'],
+    'images': ['static/description/Fix_Module_Icons_Video.gif', 'static/description/thumbnail.png'],
     'data': [
         'views/ir_module_actions.xml',
     ],
