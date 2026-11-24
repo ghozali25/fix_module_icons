@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Fix Module Icons',
-    'version': '14.0.2.0.1',
+    'version': '14.0.2.0.2',
     'summary': 'Prevent app icons from disappearing after module install/upgrade',
     'description': """
 Fix Module Icons
@@ -44,6 +44,10 @@ kosong diisi fallback bawaan Odoo. Icon asli tiap modul tetap dipakai.
 Tidak perlu script: saat modul ini di-install, semua icon rusak otomatis
 diperbaiki. Tersedia juga aksi sekali-klik "Regenerate Icon" dan
 "Fix All Module Icons" di menu Apps.
+Changelog
+---------
+14.0.2.0.2 (24 Nov 2026): deskripsi gaya baru bilingual (English default + Bahasa Indonesia) + screenshot testbed.
+
 """,
     'author': 'Ahmad Ghozali',
     'license': 'LGPL-3',
