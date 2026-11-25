@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Fix Module Icons',
-    'version': '14.0.2.0.7',
+    'version': '14.0.2.0.8',
     'summary': 'Prevent app icons from disappearing after module install/upgrade',
     'description': """
 Fix Module Icons
